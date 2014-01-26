@@ -1,0 +1,27 @@
+var BaseMap = new Array()
+BaseMap = [
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"b         b   bb   b         b",
+"b bbbbb b   b bb b   b bbbbb b",
+"b b000b b b b bb b b b b000b b",
+"b b000b b b b bb b b b b000b b",
+"b bbbbb b b b bb b b b bbbbb b",
+"b       b   b bb b   b       b",
+"bbbbb b b b b bb b b b b bbbbb",
+"      b b b b bb b b b b      ",
+"bbbbb b b b b bb b b b b bbbbb",
+"b             bb             b",
+"b bbb bbb bbb bb bbb bbb bbb b",
+"b                            b",
+"b bbbbbbbbbbbbbbbbbbbbbbbbbb b",
+"b                            b",
+"b b bbbbbbbbbbbbbbbbbbbbbb b b",
+"b b                        b b",
+"b bbbbbbbbbbbbbbbbbbbbbbbbbb b",
+"b                            b",
+"b bbbbb bbbbbbbbbbbbbb bbbbb b",
+"b b000b                b000b b",
+"b bbbbb bbbbbbbbbbbbbb bbbbb b",
+"b                            b",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+]
