@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	</head>
+	<body id="datBod">
+	<canvas id="myCanvas" width="1024px" height="768px" style="border: 2px solid #000000;">
+	<script type="text/javascript">
+	$( "#myCanvas" ).mousedown(function() {
+		console.log("You clickin on meee!?");
+	});
+	$( "#datBod" ).keydown(function() {
+		console.log("Ahh push it, push it real good");
+	});
+	
+	var logo = new Image();
+	logo.src = "Images/Pacman_logo.png";
+
+	var FPS = 60;
+	
+	//boolean for gamestate
+	var inMain = true;
+	
+	//update function
+	var update = function(){
+		inMain = true;
+	}
+	
+	var draw = function(can,ctx){
+		if(inMain){
+			ctx.clearRect(0,0,can.width, can.height);
+			ctx.fillStyle = 'black';
+			ctx.fillRect(0,0,can.width, can.height);
+			ctx.drawImage(logo, can.width/2 - logo.width/2, can.height/5);
+			ctx.font = '50px Georgia';
+			ctx.fillStyle = 'grey';
+			ctx.fillText("Click to Start",375,600);
+			
+		}
+	}
+	
+	var gameLoop = setInterval(function(){
+		var canvas = document.getElementById('myCanvas');
+		var ctx = canvas.getContext("2d");
+		update();
+		draw(canvas,ctx);
+	},
+	1000/FPS);
+	
+	</script>
+	
+	</body>
+</html>
